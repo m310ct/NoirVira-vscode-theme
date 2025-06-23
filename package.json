@@ -1,0 +1,21 @@
+{
+  "name": "noir-vira",
+  "displayName": "Noir Vira",
+  "description": "A dark theme similar to Vira Carbon",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Noir Vira",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Noir Vira-color-theme.json"
+      }
+    ]
+  }
+}
