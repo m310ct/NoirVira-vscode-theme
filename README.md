@@ -1,4 +1,4 @@
-# Noir Vira Pro
+# Noir Vira
 
 A sleek, modern dark theme for VS Code with high contrast, black-gold aesthetics, and cool blue function highlights — designed for clarity, focus, and elegance.
 
