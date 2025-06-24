@@ -1,16 +1,18 @@
-# noir-vira README
+# Noir Vira Pro
 
-## Working with Markdown
+A sleek, modern dark theme for VS Code with high contrast, black-gold aesthetics, and cool blue function highlights — designed for clarity, focus, and elegance.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+## ✨ Features
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+- Deep black background (`#050505`) for maximum contrast and eye comfort
+- **Elegant golden-orange** keywords for rich visual structure
+- **Cool blue functions** for a professional and modern coding experience
+- **Soft green strings** and **muted gray comments** to reduce visual noise
+- Optimized for **C**, **Python**, **JavaScript**, and more
+- Balanced color palette for both day and night coding sessions
+- Fully tested on macOS with JetBrains Mono font (recommended)
 
-## For more information
+---
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## 🖼 Preview
+![](picture/pic1.png)
