@@ -168,3 +168,4 @@ This theme includes color customizations for the following programming languages
 ![YAML](https://raw.githubusercontent.com/m310ct/NoirVira-vscode-theme/refs/heads/main/picture/yaml.png)
 
 ### Zig
+![Zig](https://raw.githubusercontent.com/m310ct/NoirVira-vscode-theme/refs/heads/main/picture/zig.png)
