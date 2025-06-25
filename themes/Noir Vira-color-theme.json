@@ -57,28 +57,40 @@
 
   "tokenColors": [
     {
-      "scope": ["keyword", "storage.type"],
+      "name": "Keywords",
+      "scope": ["keyword", "keyword.control", "keyword.operator", "keyword.other"],
       "settings": {
         "foreground": "#FFB833",
         "fontStyle": "bold"
       }
     },
     {
-      "scope": ["variable"],
+      "name": "Types",
+      "scope": [
+        "storage.type",
+        "storage.type.primitive",
+        "support.type",
+        "entity.name.type",
+        "support.class",
+        "meta.type.cast.expr",
+        "meta.return-type"
+      ],
       "settings": {
-        "foreground": "#f5f5dc"
+        "foreground": "#f53747",
+        "fontStyle": "bold"
       }
     },
     {
-      "name": "Functions (All Languages)",
+      "name": "Functions",
       "scope": [
         "entity.name.function",
         "support.function",
+        "meta.function-call",
+        "variable.function",
+        "meta.function-call.python",
         "support.function.builtin",
         "support.function.builtin.python",
-        "meta.function-call",
-        "meta.function-call.python",
-        "variable.function.python"
+        "entity.name.function.constructor"
       ],
       "settings": {
         "foreground": "#7FB4F0",
@@ -86,63 +98,206 @@
       }
     },
     {
-      "scope": ["string"],
+      "name": "Variables",
+      "scope": [
+        "variable",
+        "variable.parameter",
+        "meta.definition.variable.name",
+        "support.variable",
+        "meta.object-literal.key"
+      ],
+      "settings": {
+        "foreground": "#f5f5dc"
+      }
+    },
+    {
+      "name": "Strings",
+      "scope": [
+        "string",
+        "string.quoted",
+        "string.quoted.double",
+        "string.quoted.single",
+        "string.template"
+      ],
       "settings": {
         "foreground": "#9BC27D",
         "fontStyle": "italic"
       }
     },
     {
-      "scope": ["constant.numeric"],
+      "name": "Numbers",
+      "scope": ["constant.numeric", "constant.language.boolean", "constant.language.null"],
       "settings": {
         "foreground": "#c85e60"
       }
     },
     {
-      "scope": ["constant.character.escape"],
-      "settings": {
-        "foreground": "#f5f5dc"
-      }
-    },
-    {
-      "scope": ["constant.character.format"],
-      "settings": {
-        "foreground": "#cd672e"
-      }
-    },
-    {
-      "scope": ["comment", "punctuation.definition.comment"],
+      "name": "Comments",
+      "scope": ["comment", "comment.line", "comment.block", "punctuation.definition.comment"],
       "settings": {
         "foreground": "#3e3e3e",
         "fontStyle": "italic"
       }
     },
     {
-      "scope": ["punctuation", "operator", "constant.language"],
-      "settings": {
-        "foreground": "#ffb833"
-      }
-    },
-    {
+      "name": "Operators and Punctuation",
       "scope": [
-        "constant.other.placeholder.c",
-        "constant.character.format",
-        "keyword.other.placeholder.c"
+        "keyword.operator",
+        "punctuation",
+        "punctuation.separator",
+        "punctuation.terminator",
+        "punctuation.definition",
+        "punctuation.definition.string",
+        "punctuation.section"
       ],
       "settings": {
-        "foreground": "#cd672e"
+        "foreground": "#FFB833"
       }
     },
     {
+      "name": "HTML Tags and Attributes",
+      "scope": [
+        "entity.name.tag",
+        "meta.tag",
+        "meta.tag.sgml",
+        "entity.other.attribute-name",
+        "string.quoted.double.html"
+      ],
+      "settings": {
+        "foreground": "#E8A87C",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Class and Struct",
+      "scope": [
+        "entity.name.type.class",
+        "entity.name.type.struct",
+        "meta.class",
+        "meta.struct"
+      ],
+      "settings": {
+        "foreground": "#c678dd",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Constants and Enums",
+      "scope": [
+        "constant",
+        "constant.language",
+        "constant.other",
+        "variable.other.constant",
+        "entity.name.constant",
+        "entity.name.enum"
+      ],
+      "settings": {
+        "foreground": "#d19a66"
+      }
+    },
+    {
+      "name": "Markdown Specific",
+      "scope": [
+        "markup.heading",
+        "markup.bold",
+        "markup.italic",
+        "markup.inline.raw",
+        "markup.quote",
+        "markup.list"
+      ],
+      "settings": {
+        "foreground": "#ffcc00"
+      }
+    },
+    {
+    "name": "Extended Language Support",
     "scope": [
-      "storage.type.built-in.primitive.c",
-      "storage.type",
-      "storage.type.primitive.c"
+      "keyword.mnemonic",
+      "meta.instruction",
+      "support.constant.register",
+      "constant.numeric.hex",
+
+      "variable.other.readwrite.ruby",
+      "constant.language.ruby",
+      "entity.name.function.ruby",
+      "support.function.kernel",
+      "meta.class.ruby",
+      "punctuation.definition.block.ruby",
+
+      "variable.other.perl",
+      "support.function.perl",
+      "constant.language.perl",
+      "punctuation.definition.variable.perl",
+
+      "entity.name.function.zig",
+      "storage.type.zig",
+      "keyword.zig",
+      "variable.zig",
+
+      "keyword.control.cs",
+      "entity.name.type.class.cs",
+      "variable.other.cs",
+      "support.class.system",
+      "entity.name.namespace.cs",
+      "storage.type.cs",
+
+      "keyword.control.asp",
+      "variable.language.asp",
+      "support.function.asp",
+      "meta.function-call.asp",
+
+      "source.shell",
+      "variable.language.shell",
+      "string.interpolated.shell",
+      "support.function.builtin.shell",
+
+      "keyword.control.makefile",
+      "entity.name.function.makefile",
+      "variable.other.makefile",
+
+      "variable.parameter.r",
+      "support.function.r",
+      "entity.name.function.r",
+      "constant.language.r",
+
+      "entity.name.function.dart",
+      "support.class.dart",
+      "storage.type.dart",
+      "variable.other.dart",
+
+      "keyword.control.kotlin",
+      "variable.parameter.kotlin",
+      "entity.name.class.kotlin",
+      "meta.function.kotlin"
     ],
     "settings": {
-      "foreground": "#f53747",
+      "foreground": "#f0a0ff",
       "fontStyle": "bold"
     }
+  },
+{
+  "name": "PowerShell Enhanced",
+  "scope": [
+    "keyword.control.powershell",
+    "keyword.operator.powershell",
+    "keyword.other.powershell",
+    "variable.language.powershell",
+    "variable.other.readwrite.powershell",
+    "support.function.powershell",
+    "support.constant.powershell",
+    "constant.numeric.powershell",
+    "string.quoted.single.powershell",
+    "string.quoted.double.powershell",
+    "comment.line.number-sign.powershell",
+    "entity.name.function.powershell",
+    "storage.type.powershell"
+  ],
+  "settings": {
+    "foreground": "#569CD6",
+    "fontStyle": "bold"
   }
+}
+
+
   ]
 }
