@@ -296,7 +296,88 @@
     "foreground": "#569CD6",
     "fontStyle": "bold"
   }
+},
+{
+  "name": "JSON Keys",
+  "scope": [
+    "support.type.property-name.json",
+    "meta.object-literal.key.json"
+  ],
+  "settings": {
+    "foreground": "#6EC1E4", 
+    "fontStyle": "bold"
+  }
+},
+{
+  "name": "HTML Tag Structure",
+  "scope": [
+    "punctuation.definition.tag.begin.html", 
+    "punctuation.definition.tag.end.html"
+  ],
+  "settings": {
+    "foreground": "#f5f5dc"
+  }
+},
+{
+  "name": "HTML Tag Names",
+  "scope": [
+    "entity.name.tag.html"
+  ],
+  "settings": {
+    "foreground": "#FFB833", 
+    "fontStyle": "bold"
+  }
+},
+{
+  "name": "HTML Attribute Names",
+  "scope": [
+    "entity.other.attribute-name.html"
+  ],
+  "settings": {
+    "foreground": "#d19a66"
+  }
+},
+{
+  "name": "HTML Attribute Values",
+  "scope": [
+    "string.quoted.double.html", 
+    "string.quoted.single.html"
+  ],
+  "settings": {
+    "foreground": "#9BC27D",
+    "fontStyle": "italic"
+  }
+},
+{
+  "name": "Enhanced Comments (High Contrast)",
+  "scope": [
+    "comment",
+    "comment.line",
+    "comment.block",
+    "punctuation.definition.comment"
+  ],
+  "settings": {
+    "foreground": "#6b6b6b", 
+    "fontStyle": "italic"
+  }
+},
+{
+  "name": "Unified Modifiers (static, const, etc.)",
+  "scope": [
+    "storage.modifier",
+    "storage.modifier.static",
+    "storage.modifier.const",
+    "storage.modifier.final",
+    "storage.modifier.public",
+    "storage.modifier.private",
+    "keyword.modifier"
+  ],
+  "settings": {
+    "foreground": "#FFB833", 
+    "fontStyle": "bold"
+  }
 }
+
 
 
   ]
